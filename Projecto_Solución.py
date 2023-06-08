@@ -13,7 +13,7 @@ Jugador_2 = input("Nombre del jugador 2: ")
 print(Jugador_1)
 print(Jugador_2)
 
-print("La épica pelea de " + Jugador_1 + " y " + Jugador_2 + " dará inicio")
+print("¡La épica pelea de " + Jugador_1 + " y " + Jugador_2 + " dará inicio!")
 
 puntajes = {Jugador_1: 0, Jugador_2: 0}
 
