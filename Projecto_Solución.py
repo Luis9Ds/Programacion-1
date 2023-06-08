@@ -38,7 +38,7 @@ while True:
         ganador = Jugador_2
     
     if ganador:
-        print("\n¡" + ganador + " ha ganado el juego!")
+        print("\n¡" + ganador + " ha ganado el juego! Haz clic aquí para tu celebración: " + "https://youtu.be/04854XqcfCY?t=35")
         break
     
     if modo_juego.lower() == "manual":
@@ -71,3 +71,5 @@ while True:
         puntajes[jugador] = 15
     else:
         puntajes[jugador] += 15
+
+# Obviamente esta cosita tuvo revisiones y correciones, no soy un super humano, entre lo que no conocia era la funcion "import random" del inicio, cosa la cual me imposibilito en un inicio el uso del modo "compuitadora" Por mas que parezca estupido tuve problemas al no incluir algo tan simple como una variable de puntajes (puntajes = {Jugador_1: 0, Jugador_2: 0}) Por lo que en un inicio el desastre era que no diferenciaba los puntajes (podia darle 15 puntos al Jugador 1, que en la siguiente ronda si le daba 15 puntos al Jugador 2 este magicamente tendria 30), lastimosamente no supe como hacerlo con el "for i in range" Esa cosa siempre me ah confundido, capaz tendre que repasarlo...De todos modos, entre lo que es 100% original mio fue el "menu" el cual solo consta de dictar las intrucciones, preguntarle al jugador los nombres y decidir el modo de juego, la estructura If Elif Else fue el peor dolor creo, un pequeño error desancadenaba que algo no funcionase (el modo computadora siempre terminaba en un deuce) Pero bueno detalles, como cosa graciosa intente hacer el codigo usando for in en chatgpt, pero sufrio el mismo destino de un desastre de bugs, igual soy medio bobo no tengo la menor idea, de todos modos en pura teoria todo esta tal cual me lo pidio, muchas gracias por sus momentito de leer esto....o probablemente lo ignore pero bueh me hace feliz compartir un poquito de mis pensamientos. Att: Luis9Ds
