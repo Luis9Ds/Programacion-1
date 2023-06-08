@@ -21,4 +21,4 @@ print("La épica pelea de " + Jugador_1 + " y " + Jugador_2 + " dará inicio")
 Sistema_de_Puntos = [15,30,40]
 for i in range(len(Sistema_de_Puntos)):
     
-# Me rindo jaajjaaj
+# Me rindo jaajjaa
