@@ -26,9 +26,9 @@ while True:
     
     if puntajes[Jugador_1] == 40 and puntajes[Jugador_2] == 40:
         print("Deuce")
-    elif puntajes[Jugador_1] == "advantage":
+    elif puntajes[Jugador_1] == "ventaja":
         print("Ventaja para " + Jugador_1)
-    elif puntajes[Jugador_2] == "advantage":
+    elif puntajes[Jugador_2] == "ventaja":
         print("Ventaja para " + Jugador_2)
         
     ganador = None
@@ -59,9 +59,9 @@ while True:
         print("Modo de juego inválido. Por favor, ingrese 'manual' o 'computadora'.")
         continue
     
-    if puntajes[jugador] == 40 and puntajes[jugador] != "advantage":
+    if puntajes[jugador] == 40 and puntajes[jugador] != "ventaja":
         puntajes[jugador] = "Juego"
-    elif puntajes[jugador] == "advantage":
+    elif puntajes[jugador] == "ventaja":
         puntajes[jugador] = 0
     elif puntajes[jugador] == 30:
         puntajes[jugador] = 40
