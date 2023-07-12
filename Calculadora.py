@@ -1,6 +1,6 @@
-from tkinter import Tk,Text,Button,END,re
+from tkinter import Tk,Text,Button,END,re # tkinter y se utiliza para crear una ventana, Text Puedes usarlo para mostrar texto o permitir que los usuarios ingresen y editen texto en una ventana. Button: Es una clase que representa un botón en una interfaz gráfica. Puedes usarlo para agregar botones a tu ventana y asociar funciones o acciones a ellos. END: Es una constante que indica el final de un texto en un widget Text. Puedes usarlo para realizar operaciones de inserción, eliminación o selección en un widget Text. re: Es un módulo en Python que proporciona funciones para trabajar con expresiones regulares. Las expresiones regulares son secuencias de caracteres que definen un patrón de búsqueda. Al importar el módulo re, puedes utilizar estas funciones para buscar, extraer o manipular texto basado en patrones específicos.
 
-class Interfaz:
+class Interfaz: #Cuando se define una clase llamada Interfaz, se está creando un "molde" o una plantilla que define la estructura y el comportamiento de un objeto. Dentro de esta clase, puedes definir métodos, que son funciones asociadas a la clase y que pueden ser utilizadas para realizar operaciones específicas.
     def __init__(self, ventana):
         #Inicializar la ventana con un título
         self.ventana=ventana
@@ -10,7 +10,7 @@ class Interfaz:
         self.pantalla=Text(ventana, state="disabled", width=40, height=3, background="orchid", foreground="white", font=("Helvetica",15))
 
         #Ubicar la pantalla en la ventana
-        self.pantalla.grid(row=0, column=0, columnspan=4, padx=5, pady=5)
+        self.pantalla.grid(row=0, column=0, columnspan=4, padx=5, pady=5) #grid() se utiliza para posicionar y organizar los objetos en una cuadrícula en una interfaz gráfica. En este caso particular, se está utilizando en el objeto self.pantalla y se le están pasando varios argumentos para especificar su posición y apariencia en la cuadrícula.
 
         #Inicializar la operación mostrada en pantalla como string vacío
         self.operacion=""
@@ -32,7 +32,7 @@ class Interfaz:
         boton14=self.crearBoton(0)
         boton15=self.crearBoton("+")
         boton16=self.crearBoton("-")
-        boton17=self.crearBoton("=",escribir=False,ancho=20,alto=2)
+        boton17=self.crearBoton("=",escribir=False,ancho=20,alto=2)  #El orden en el que se colocarán los botones en la interfaz gráfica dependerá de cómo se haya implementado la función crearBoton() y cómo se esté utilizando dentro del código. En este caso, los botones se colocarían en una cuadrícula de 4 columnas y 5 filas.
 
         #Ubicar los botones con el gestor grid
         botones=[boton1, boton2, boton3, boton4, boton5, boton6, boton7, boton8, boton9, boton10, boton11, boton12, boton13, boton14, boton15, boton16, boton17]
@@ -40,7 +40,7 @@ class Interfaz:
         for fila in range(1,5):
             for columna in range(4):
                 botones[contador].grid(row=fila,column=columna)
-                contador+=1
+                contador+=1  #crea una lista llamada botones que contiene todos los botones creados previamente, en el orden en que se llaman a las funciones crearBoton().Luego, se utiliza un bucle for anidado para iterar sobre las filas y columnas de una cuadrícula de 4x4 (4 filas y 4 columnas). Dentro de este bucle, se accede a cada botón de la lista botones utilizando el contador contador, y se utiliza el método grid() para colocar cada botón en una posición específica de la cuadrícula.
         #Ubicar el último botón al final
         botones[16].grid(row=5,column=0,columnspan=4)
         
