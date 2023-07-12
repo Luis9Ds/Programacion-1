@@ -94,3 +94,5 @@ class Interfaz: #Cuando se define una clase llamada Interfaz, se está creando u
 ventana_principal=Tk()
 calculadora=Interfaz(ventana_principal)
 ventana_principal.mainloop()
+
+#Estoy muy seguro que esto no es lo que ud esperaba, pero legal me salieron muchos codigos que usaban tkinker y montaban una calcudora bonita, y la verdad que me rendi intentantando adivinar cual era la biblioteca exacta :p (Igual deje explicado como resultado de la investigación)
